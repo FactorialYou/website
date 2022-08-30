@@ -472,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 100px 0;
+  padding: 75px 0;
   overflow: hidden;
 }
 
@@ -1281,7 +1281,6 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f2f6f9;
   min-height: 40px;
   margin-top: 85px;
 }
