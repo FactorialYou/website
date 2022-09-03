@@ -34,7 +34,7 @@
               grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
               .then(token => {
                 formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
+                js_email_form_submit(thisForm);
               })
             } catch(error) {
               displayError(thisForm, error)
@@ -44,7 +44,7 @@
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
-        php_email_form_submit(thisForm, action, formData);
+        js_email_form_submit(thisForm);
       }
     });
   });
@@ -76,10 +76,59 @@
     });
   }
 
+  function js_email_form_submit(thisForm){
+    
+    let body = "From: " + document.getElementById("name").value + "\n";
+    body += "Email: " + document.getElementById("email").value + "\n";
+    body += "Subject: " + document.getElementById("subject").value + "\n";
+    body += "Message: " + document.getElementById("message").value + "\n";
+  
+    let request = {
+      "toEmails": ["kalebmburd@gmail.com"],
+      "subject": document.getElementById("subject").value,
+      "body": body
+    }
+
+    fetch("https://fellas-rest.herokuapp.com/api/email", {
+      method: 'POST',
+      body: JSON.stringify(request),
+      headers: {'Content-Type': 'application/json'}
+      
+    })
+    .then(response => {
+      if( response.ok ) {
+        return "OK"
+      } else {
+        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+      }
+    })
+    .then(data => {
+      document.querySelector('.loading').classList.remove('d-block');
+      if (data.trim() == 'OK') {
+        document.querySelector('.sent-message').classList.add('d-block');
+        reset(); 
+      } else {
+        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+      }
+    })
+    .catch((error) => {
+      displayError(thisForm, error);
+    });
+  
+    console.log(request);
+  }
+
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
+  }
+
+  function reset(){
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    document.getElementById("subject").value = "";
   }
 
 })();
