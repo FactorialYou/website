@@ -1508,7 +1508,7 @@ section {
 }
 
 .fakeMenu {
-  width: 550px;
+  max-width: 550px;
   box-sizing: border-box;
   height: 25px;
   background-color: #bbb;
@@ -1520,7 +1520,7 @@ section {
 div.fakeScreen {
   background-color: #151515;
   box-sizing: border-box;
-  width: 550px;
+  max-width: 550px;
   margin: 0px auto 25px auto;
   padding: 0px 20px;
   border-bottom-left-radius: 5px;
