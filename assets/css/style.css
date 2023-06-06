@@ -1477,6 +1477,20 @@ section {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Labs
+--------------------------------------------------------------*/
+
+.lab-card.card-header {
+  background-color: rgba(24, 6, 185, 0.8);
+  color: white;
+}
+
+a.lab-card.btn {
+  background-color: rgba(24, 6, 185, 0.8);
+  color: white;
+}
+
 
 /*--------------------------------------------------------------
 # Terminal
