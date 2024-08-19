@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>FactorialYou | Labs</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="..././assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Additional CSS Files -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/prism.css" rel="stylesheet" />
+  
+    <!-- =======================================================
+    * Template Name: Techie - v4.7.0
+    * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="../../index">FactorialYou</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link" href="../../index">Home</a></li>
+            <li><a class="nav-link" href="../../resources">Resources</a></li>
+            <li><a class="nav-link" href="../../tutoring">Tutoring</a></li>
+            <li><a class="nav-link" href="../../officeHours">Office Hours</a></li>
+            <li><a class="nav-link" href="../../contactUs">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Functions Lab</h2>
+            </div>
+
+            <h3>Directions</h3>
+            <hr>
+            <p>Practice solving each of the problems below. Additionally, solve the problems without using console input (Scanner, input, cin, etc) or output (System.out.print, print, cout, etc) as part of your function. Instead write functions that accept inputs as parameters and provides outputs as return values.</p>
+
+            <div class="terminal-container multi">
+              <div class="terminal">
+                <div class="header">
+                  <div class="button close"></div>
+                  <div class="button minimize"></div>
+                  <div class="button zoom"></div>
+                </div>
+                <pre class="screen">
+                  <code class="language-java">
+// Do this
+public int mySoultion(int param){
+  return param * 2;
+}
+
+int answer = mySoultion(3);
+System.out.println(answer);
+                  </code>
+                </pre>
+              </div>
+
+              <div class="terminal">
+                <div class=header>
+                  <div class="button close"></div>
+                  <div class="button minimize"></div>
+                  <div class="button zoom"></div>
+                </div>
+                <pre class="screen">
+                  <code class="language-java">
+// Not this
+public void mySoultion(int param){
+  System.out.println(param * 2);
+}
+
+// Or this
+public void mySoultion(){
+  Scanner scanner = new Scanner(System.in);
+  int num = scanner.nextInt();
+  System.out.println(num * 2);
+}  
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <h3 class="mt-5">Starter Code</h3>
+            <hr>
+
+            <h3 class="mt-5">Practice Problems</h3>
+            <hr>
+
+            <ol class="lab">
+              <li>
+                <h4 class="fs-5">Hello World</h4>
+                <p><strong>Description:</strong> Return the text <code>Hello World</code> from the function.</p>
+                <p><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>Hello World</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">What's your Name?</h4>
+                <p ><strong>Description:</strong> Return text containing your name from the function.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>Tony Stark</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Driver's license</h4>
+                <p ><strong>Description:</strong> Recreate the following example driver's license, replacing the sample info with your own or ficticous values, and return.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>
+                      Driver's License <br>
+                      ---------------------------------<br>
+                      Name:       Kaleb Burd<br>
+                      Iss. Date:  4/10/23<br>
+                      Exp. Date:  4/10/31<br>
+                      DOB:        6/09/85<br>
+                      Donor:      Y<br>
+                      Sex:        M<br>
+                      Hair:       BRN<br>
+                      Eyes:       BLUE<br>
+                      Height:     6' 0"<br>
+                      Weight:     180 lbs<br>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Square That</h4>
+                <p ><strong>Description:</strong> Provided a number <code>n</code>, return <code>n</code> squared.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>49</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>100</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Area of a Circle</h4>
+                <p ><strong>Description:</strong> Provided a radius <code>r</code>, return the area of the circle of radius <code>r</code>.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>49</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>100</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Scoreboard</h4>
+                <p ><strong>Description:</strong> Provided a the number of touchdowns <code>t</code> and the number of field goals <code>f</code>, return the final score. Note: here a touchdown will be 7 points</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2, 0</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0, 3</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3, 1</td>
+                    <td>24</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Even or Odd</h4>
+                <p ><strong>Description:</strong> Provided a the number <code>n</code>, return <code>Even</code> if <code>n</code> is even and <code>Odd</code> if <code>n</code> is odd.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>Even</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>Even</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>Odd</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Rock, Paper, Scissors, Shoot!</h4>
+                <p ><strong>Description:</strong> Provided a String <code>move</code> that represents a move in <code>rock</code>, <code>paper</code>, or <code>scissors</code>, return a String containing what move beats the provided move.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Rock</td>
+                    <td>Paper</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Paper</td>
+                    <td>Scissors</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Scissors</td>
+                    <td>Rock</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Max of 2</h4>
+                <p ><strong>Description:</strong> Provided two numbers, <code>a</code> and <code>b</code>, return the higher of the two numbers.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2, 4</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>6, 1</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3, 3</td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Max of 3</h4>
+                <p ><strong>Description:</strong> Provided three numbers, <code>a</code>, <code>b</code>, and <code>c</code>, return the highest of the numbers.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2, 4, 6</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7, 6, 1</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3, 9, 3</td>
+                    <td>9</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">BMI Calculator</h4>
+                <p ><strong>Description:</strong> Provided a height <code>h</code> and weight <code>w</code>, return the text indicating what range their BMI they falls into. BMI can be calculated using the following equation, <code>BMI = 703 × w/h</code>, where weight and height are pounds and inches respectively.</p>
+                <table class="table table-bordered table-striped" style="width: fit-content">    
+                  <tr><th>Message</th><th>BMI</th></tr>
+                  <tr><td>Underweight</td><td>Less than 18.5</td></tr>
+                  <tr><td>Healthy Weight</td><td>Between 18.5 and 25</td></tr>
+                  <tr><td>Overweight</td><td>Greater than 25</td></tr>
+                </table>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>17</td>
+                    <td>Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>26</td>
+                    <td>Overweight</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>21.2</td>
+                    <td>Healthy Weight</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Number Line 1</h4>
+                <p ><strong>Description:</strong> Provided a the number <code>n</code>, return all the numbers from 0 to <code>n</code> inclusive, comma separated.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0,1,2</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0,1,2,3,4,5</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Number Line 2</h4>
+                <p ><strong>Description:</strong> Provided the numbers <code>a</code> and <code>b</code>, where <code>b</code> is greater or eqaul to <code>a</code>, return all the numbers from <code>a</code> to <code>b</code> inclusive, comma separated.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2, 5</td>
+                    <td>2,3,4,5</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3, 3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>5, 9</td>
+                    <td>5,6,7,8,9</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Number Line 3</h4>
+                <p ><strong>Description:</strong> Provided the numbers <code>a</code>, <code>b</code>, and <code>c</code>, return all the numbers from <code>a</code> to <code>b</code> inclusive, and counting by <code>c</code>, comma separated.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2, 5, 1</td>
+                    <td>2,3,4,5</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0, 10, 2</td>
+                    <td>0,2,4,6,8,10</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>5, 9, 3</td>
+                    <td>5,8</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Summing Numbers</h4>
+                <p ><strong>Description:</strong> Provided a the number <code>n</code>, return the sum of the numbers from 1 to <code>n</code>.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>55</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Summing Squares</h4>
+                <p ><strong>Description:</strong> Provided a the number <code>n</code>, return the sum of the square numbers from 1 to <code>n</code> inclusive.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                    <th>Explanation</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>1 and 4 are the squares under 8, which sum to 5</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>1, 4, 9, and 16 are the squares under 20, which sum to 30</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>100</td>
+                    <td>385</td>
+                    <td>1, 4, 9, 16, 25, 36, 49, 64, 81, and 100 are the squares under 100, which sum to 385</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Character Grids</h4>
+                <p ><strong>Description:</strong> Provided the number <code>n</code>, return an <code>n</code> by <code>n</code> grid of <code>*</code>.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>
+                      ***<br>
+                      ***<br>
+                      ***<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>
+                      **<br>
+                      **<br>
+                    </td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Is it Prime?</h4>
+                <p ><strong>Description:</strong> A prime number is one that can only be evenly divided by 1. Provided the number <code>n</code>, return <code>True</code> if <code>n</code> is a prime number and <code>False</code> if it is not prime.</p>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>True</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>True</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>False</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">BurdBuzz</h4>
+                <p ><strong>Description:</strong> Provided the number <code>n</code>, return all the numbers from 1 to <code>n</code> comma separated. Note the following exceptions:</p>
+                <ul class="mb-3">
+                  <li> Display <code>Burd</code> instead of multiples of two</li>
+                  <li> Display <code>Buzz</code> instead of multiples of seven</li>
+                  <li> Display <code>BurdBuzz</code> instead of multiples of two and seven</li>
+                </ul>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1,Burd,3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>1,Burd,3,Burd,5,Burd,Buzz</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>14</td>
+                    <td>1,Burd,3,Burd,5,Burd,Buzz,Burd,9,Burd,11,Burd,13,BurdBuzz</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                <h4 class="fs-5">Fibonacci</h4>
+                <p ><strong>Description:</strong> Provided the number <code>n</code>, return the <code>nth</code> number in the fibonacci sequence. The fibonacci sequence can be describe in the following way:</p>
+                <ul class="mb-3">
+                  <li> 0th element: 0</li>
+                  <li> 1st element: 1</li>
+                  <li> nth element: <code>element at position n-1</code> plus <code>element at position n-2</code></li>
+                </ul>
+                <p ><strong>Examples:</strong></p>
+                <table class="table table-bordered table-striped" style="width: fit-content">
+                  <tr>
+                    <th>No</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>True</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>True</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>False</td>
+                  </tr>
+                </table>
+              </li>
+            </ol>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>FactorialYou</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Phone:</strong> (302) 514-7667<br>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Email:</strong> kburd@factorialyou.com<br>
+        </div>
+
+        <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div> -->
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Additional JS Files -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/prism.js"></script>
+
+</body>
+
+</html>
+
