@@ -1516,7 +1516,6 @@ ol.lab > li::marker {
 
 .terminal-container.multi {
   justify-content: space-around;
-  
 }
 
 @media (max-width: 1200px) {
@@ -1589,4 +1588,6 @@ ol.lab > li::marker {
   margin: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
