@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FactorialYou | Maps Lab</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../assets/img/favicon.png" rel="icon">
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="..././assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/prism.css" rel="stylesheet" />
+
+  <!-- =======================================================
+    * Template Name: Techie - v4.7.0
+    * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="../../index">FactorialYou</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="../../index">Home</a></li>
+          <li><a class="nav-link" href="../../resources">Resources</a></li>
+          <li><a class="nav-link" href="../../tutoring">Tutoring</a></li>
+          <li><a class="nav-link" href="../../officeHours">Office Hours</a></li>
+          <li><a class="nav-link" href="../../contactUs">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Maps Lab</h2>
+        </div>
+
+        <h3>Directions</h3>
+        <hr>
+        <p>Practice solving each of the problems below, using the values provided as input to return the expected
+          outputs.</p>
+
+        <h3 class="mt-5">Starter Code</h3>
+        <hr>
+
+        <div style="display: flex; justify-content: space-around;">
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/MapsLab/JavaStarterCode.java"
+            target="_blank">
+            Java
+          </a>
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/MapsLab/JavaScriptStarterCode.js"
+            target="_blank">
+            JavaScript
+          </a>
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/MapsLab/PythonStarterCode.py"
+            target="_blank">
+            Python
+          </a>
+        </div>
+
+        <h3 class="mt-5">Practice Problems</h3>
+        <hr>
+
+        <ol class="lab">
+          <li>
+            <h4 class="fs-5">Number of Keys in a Map</h4>
+            <p><strong>Description:</strong> Given a <code>Map</code> called <code>myMap</code>, write a function that returns the number of keys in <code>myMap</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>{}</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>{alpha: 1, beta: 2, gamma: 3, delta: 4, epsilon: 5}</td>
+                <td>5</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Remove Key from Map</h4>
+            <p><strong>Description:</strong> Given a <code>Map</code> called <code>myMap</code> and a <code>key</code>, write a function that removes the <code>key</code> from <code>myMap</code> if it exists and returns <code>myMap</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}, alpha</td>
+                <td>{beta: 2, gamma: 3}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}, gamma</td>
+                <td>{alpha: 1, beta: 2}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}, delta</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Create Map of Zeros</h4>
+            <p><strong>Description:</strong> Given an <code>array</code> called <code>names</code>, create a map where each name in <code>names</code> is a key in the map. The value for each key should be <code>0</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[Kaleb, Jess, Riley]</td>
+                <td>{Kaleb: 0, Jess: 0, Riley: 0}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[alpha, beta, gamma]</td>
+                <td>{alpha: 0, beta: 0, gamma: 0}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[]</td>
+                <td>{}</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">First and Second Letters as Key-Value Pairs</h4>
+            <p><strong>Description:</strong> Given an <code>array</code> called <code>words</code>, create a map where the key is the first letter of each word and the value is the second letter. If two words start with the same letter, use the first word to determine the value.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[You, are, smart]</td>
+                <td>{y:o, a:r, s:m}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[alpha, beta, gamma]</td>
+                <td>{a:l, b:e, g:a}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[Back, to, Boston]</td>
+                <td>{b:a, t:o}</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Letter Occurrence in a Sentence</h4>
+            <p><strong>Description:</strong> Given a <code>String</code> called <code>sentence</code>, determine how many times each letter occurs in the sentence. Return your answer as a <code>Map</code> of letters as keys and the occurrence of that letter as the value.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>You are smart</td>
+                <td>{a:2, e:1, m:1, o:1, r:2, s:1, t:1, u:1, y:1}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Alpha beta gamma</td>
+                <td>{a:5, b:1, e:1, g:1, h:1, l:1, m:2, p:1, t:1}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nada para ti!</td>
+                <td>{a:4, d:1, i:1, n:1, p:1, r:1, t:1}</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Unique Words in a Sentence</h4>
+            <p><strong>Description:</strong> Given a <code>String</code> called <code>sentence</code>, return a <code>Map</code> where keys are each word in the sentence and the value is <code>true</code> if the word occurs only once in the sentence, <code>false</code> otherwise.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>You are smart</td>
+                <td>{you: true, are: true, smart: true}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Which witch is which?</td>
+                <td>{which: false, witch: true, is: true}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Nada para ti!</td>
+                <td>{nada: true, para: true, ti: true}</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Remove Duplicate Values in a Map</h4>
+            <p><strong>Description:</strong> Given a <code>Map</code> called <code>myMap</code>, if any keys share the same value, keep the key that comes alphabetically first and remove all the other keys. Return the updated <code>Map</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>{alpha: 1, beta: 2, gamma: 1}</td>
+                <td>{alpha: 1, beta: 2}</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}</td>
+                <td>{alpha: 1, beta: 2, gamma: 3}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>{alpha: 1, beta: 1, gamma: 1}</td>
+                <td>{alpha: 1}</td>
+              </tr>
+            </table>
+          </li>
+          
+          <li>
+            <h4 class="fs-5">Remove Duplicates from Array</h4>
+            <p><strong>Description:</strong> Given an <code>array</code> called <code>myArray</code>, remove all duplicate elements in <code>myArray</code> and return the result.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[You, are, smart]</td>
+                <td>[You, are, smart]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[alpha, beta, alpha]</td>
+                <td>[alpha, beta]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[alpha, alpha, alpha]</td>
+                <td>[alpha]</td>
+              </tr>
+            </table>
+          </li>         
+          <li>
+            <h4 class="fs-5">Common Letters in Two Strings</h4>
+            <p><strong>Description:</strong> Given two <code>Strings</code> called <code>alpha</code> and <code>beta</code>, return a new <code>String</code> that contains letters that only appear in both <code>alpha</code> and <code>beta</code>. The letters in the output should be in alphabetical order.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>alpha, beta</td>
+                <td>a</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>alphabet, alphabet</td>
+                <td>abehlpt</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>dog, cat</td>
+                <td>*Empty String*</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Check If Goal Can Be Formed from Provided Letters</h4>
+            <p><strong>Description:</strong> Given two <code>Strings</code> called <code>provided</code> and <code>goal</code>, return <code>true</code> if you can create <code>goal</code> using the letters provided in <code>provided</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>alpha, beta</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>state, taste</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>you are smart, my rat</td>
+                <td>true</td>
+              </tr>
+            </table>
+          </li>                    
+        </ol>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>FactorialYou</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Phone:</strong> (302) 514-7667<br>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Email:</strong> kburd@factorialyou.com<br>
+        </div>
+
+        <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div> -->
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Additional JS Files -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/prism.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FactorialYou | Arrays Lab</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../assets/img/favicon.png" rel="icon">
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="..././assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/prism.css" rel="stylesheet" />
+
+  <!-- =======================================================
+    * Template Name: Techie - v4.7.0
+    * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="../../index">FactorialYou</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="../../index">Home</a></li>
+          <li><a class="nav-link" href="../../resources">Resources</a></li>
+          <li><a class="nav-link" href="../../tutoring">Tutoring</a></li>
+          <li><a class="nav-link" href="../../officeHours">Office Hours</a></li>
+          <li><a class="nav-link" href="../../contactUs">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Arrays Lab</h2>
+        </div>
+
+        <h3>Directions</h3>
+        <hr>
+        <p>Practice solving each of the problems below, using the values provided as input to return the expected
+          outputs.</p>
+
+        <h3 class="mt-5">Starter Code</h3>
+        <hr>
+
+        <div style="display: flex; justify-content: space-around;">
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/ArraysLab/JavaStarterCode.java"
+            target="_blank">
+            Java
+          </a>
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/ArraysLab/JavaScriptStarterCode.js"
+            target="_blank">
+            JavaScript
+          </a>
+          <a class="btn btn-outline-theme" role="button"
+            href="https://github.com/FactorialYou/sample-code/blob/main/ArraysLab/PythonStarterCode.py"
+            target="_blank">
+            Python
+          </a>
+        </div>
+
+        <h3 class="mt-5">Practice Problems</h3>
+        <hr>
+
+        <ol class="lab">
+          <li>
+            <h4 class="fs-5">Number of Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the number of elements in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2]</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[]</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5,6,7,8,9]</td>
+                <td>10</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">First Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the first element in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2]</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5,6,7,8,9]</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Last Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the last element in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2]</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5,6,7,8,9]</td>
+                <td>9</td>
+              </tr>
+            </table>
+            <p><strong>Starting Code:</strong></p>
+          </li>
+          <li>
+            <h4 class="fs-5">Nth Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code> and an
+              <code>int</code> called <code>n</code>, write a function that returns the <code>nth</code> element in
+              <code>array</code>.
+            </p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2], 1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4], 0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5,6,7,8,9], 6</td>
+                <td>6</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">First Times Last</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the product of the first and last elements in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2]</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5,6,7,8,9]</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Middle Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the middle element in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2]</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5]</td>
+                <td>2</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Number Of Even Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that returns the number of even numbers in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,7]</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5]</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Double Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> called <code>array</code>, write a function
+              that doubles every value in <code>array</code> and returns the update version of <code>array</code></p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,7]</td>
+                <td>[10,6,14]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>[18,12,8]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2]</td>
+                <td>[0,2,4]</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">One To N</h4>
+            <p><strong>Description:</strong> Given an <code>in</code> called <code>n</code>, write a function that
+              creates an <code>int[]</code> of elements 1 to <code>n</code> and returns the array.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>[1,2,3]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>5</td>
+                <td>[1,2,3,4,5]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>[1]</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Array Slice</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code> and two numbers named
+              <code>a</code> and <code>b</code>, write a function that returns a new array containing all the values of
+              <code>array</code> between position <code>a</code> and up to but not including <code>b</code>.
+            </p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[5,3,2,1,7,0], 1, 3</td>
+                <td>[3,2]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4,9,6,4], 2, 6</td>
+                <td>[4,9,6,4]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,1,2,3,4,5], 0, 3</td>
+                <td>[0,1,2]</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Sum of Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that
+              returns the sum of all the numbers in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[1,2,3]</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,4]</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[0,0,0]</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Average of Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that
+              returns the average of all the numbers in <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[1,2,3]</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,3]</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[1,1,1]</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Smallest to Largest</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that
+              returns the elements in <code>array</code> ordered from smallest to largest.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[2,3,1]</td>
+                <td>[1,2,3]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,3]</td>
+                <td>[3,6,9]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[1,1,0]</td>
+                <td>[0,1,1]</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Median Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that
+              returns the median value of the elements in <code>array</code>. Note: the median is the number in the
+              middle of the array if you order it from smallest to largest.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[2,3,1]</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[9,6,3]</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[1,1,0]</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Mode Element</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that
+              returns the mode value of the elements in <code>array</code>. Note: the mode is the most common value in
+              <code>array</code>.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[1,1,0,2,1]</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[2,3,0,2,1]</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[3,5,0,2,3]</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Reverse Elements</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that returns <code>array</code> with the order of its elements reversed.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[3,1,0,2,1]</td>
+                <td>[1,2,0,1,3]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[2,3,0,2,5]</td>
+                <td>[5,2,0,3,2]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[3,5,0,2,3]</td>
+                <td>[3,2,0,5,3]</td>
+              </tr>
+            </table>
+          </li>
+          <li>
+            <h4 class="fs-5">Remove Duplicates</h4>
+            <p><strong>Description:</strong> Given an <code>int[]</code> named <code>array</code>, write a function that returns <code>array</code> with all the duplicate values removed.</p>
+            <p><strong>Examples:</strong></p>
+            <table class="table table-bordered table-striped" style="width: fit-content">
+              <tr>
+                <th>No</th>
+                <th>Input</th>
+                <th>Output</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>[3,1,0,2,1]</td>
+                <td>[3,1,0,2]</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>[2,3,0,2,5]</td>
+                <td>[2,3,0,5]</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>[3,5,3,3,3]</td>
+                <td>[3,5]</td>
+              </tr>
+            </table>
+          </li>          
+        </ol>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>FactorialYou</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Phone:</strong> (302) 514-7667<br>
+        </div>
+
+        <div class="me-md-auto text-center text-md-start">
+          <strong>Email:</strong> kburd@factorialyou.com<br>
+        </div>
+
+        <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div> -->
+      </div>
+
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Additional JS Files -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/prism.js"></script>
+
+</body>
+
+</html>

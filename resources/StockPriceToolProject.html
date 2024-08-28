@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>FactorialYou | Interview Prep Guide</title>
+  <title>FactorialYou | Calculator CLI</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,8 +27,9 @@
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Additional CSS Files -->
   <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/prism.css" rel="stylesheet" />
 
   <!-- =======================================================
     * Template Name: Techie - v4.7.0
@@ -64,84 +65,135 @@
 
   <main id="main">
 
-    <section id="services" class="services section-bg h-100">
+    <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Interview Prep Guide</h2>
+          <h2>Calculator CLI</h2>
         </div>
 
         <h3>Overview</h3>
         <hr>
-        <p>Small overview and discription of methodology</p>
+        <p>You will be building a web app stock market tool! Checkout ot the starter code and requirements below and dont forget to put your solution on your Github! </p>
 
-
-        <h3>Program</h3>
+        <h3 class="mt-5">Starter Code</h3>
         <hr>
 
-        <table class="table guide table-bordered table-striped text-center align-middle">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Coding Exercises</th>
-              <th>Interview Prep</th>
-              <th>Portfolio Builder</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Week 1</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./FunctionsLab" target="_blank">Functions Lab</a>
-              </td>
-              <td>
-              </td>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./CalculatorCLI" target="_blank">Calculator CLI</a>
-              </td>
-            </tr>
-            <tr>
-              <th>Week 2</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./StringsLab" target="_blank">Strings Lab</a>
-              </td>
-              <td></td>
-              <td>Stock Price CLI</td>
-            </tr>
-            <tr>
-              <th>Week 3</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./ArraysLab" target="_blank">Arrays Lab</a>
-              </td>
-              <td></td>
-              <td>Portfolio Site</td>
-            </tr>
-            <tr>
-              <th>Week 4</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./MapsLab" target="_blank">Maps Lab</a>
-              </td>
-              <td></td>
-              <td>Database Project: TODO</td>
-            </tr>
-            <tr>
-              <th>Week 5</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./WordProblemsLab.html" target="_blank">Word Problem Lab</a>
-              </td>
-              <td></td>
-              <td>Currency Convertor</td>
-            </tr>
-            <tr>
-              <th>Week 6</th>
-              <td>
-                <a class="btn btn-outline-theme btn-sm" role="button" href="./CodingAssesmentLab.html" target="_blank">Coding Assesment Lab</a>
-              </td>
-              <td></td>
-              <td>ATM API</td>
-            </tr>
-          </tbody>
-        </table>
+        <h3 class="mt-5">Requirements</h3>
+        <hr>
+        <ul>
+          <li>The system prompts the user for the stock ticker they want info on.</li>
+          <li>The system pulls the stock data from <a href="https://www.alphavantage.co/documentation/">AlphaVantage API</a>.</li>
+            <ul>
+              <li>Leverage the `TIME_SERIES_DAILY` endpoint.</li>
+              <li>See <a href="https://www.baeldung.com/java-http-request">here</a> for a tutorial on making requests for info from the API.</li>
+            </ul>
+          <li>The user can view the status of the stock (see example below).</li>
+          <li>The API will provide an attribute `close` in the response. When you pull the data for today, `close` functions as the current stock value.</li>
+          <li>The program will run until the user chooses to exit.</li>
+        </ul>
+
+        <h3 class="mt-5">Examples</h3>
+        <hr>
+
+        <div class="terminal-container multi">
+          <div class="terminal">
+            <div class=header>
+              <div class="button close"></div>
+              <div class="button minimize"></div>
+              <div class="button zoom"></div>
+            </div>
+            <pre class="screen">
+              <code class="language-text">
+Welcome to the CLI Calculator
+
+Operations:
+a: Addition
+s: Subtraction
+m: Multiplication
+d: Division
+e: Exit
+
+Choose your operation: d
+
+First Number: 4
+Second Number 3
+
+Result: 1.33
+
+Welcome to the CLI Calculator
+
+Operations:
+a: Addition
+s: Subtraction
+m: Multiplication
+d: Division
+e: Exit
+
+Choose your operation: m
+
+First Number: 2
+Second Number 0
+
+Result: 0
+
+Welcome to the CLI Calculator
+
+Operations:
+a: Addition
+s: Subtraction
+m: Multiplication
+d: Division
+e: Exit
+
+Choose your operation: d
+
+First Number: 10
+Second Number 0
+
+Result: Cannot divide by 0
+
+Welcome to the CLI Calculator
+
+Operations:
+a: Addition
+s: Subtraction
+m: Multiplication
+d: Division
+e: Exit
+
+Choose your operation: e
+
+Goodbye!
+              </code>
+            </pre>
+          </div>
+        </div>
+
+
+
+        <!-- <h4 class="fs-5">Week 1</h4>
+            <div class="ms-3">
+              <p>Coding Challenges: <a href="../labs/FunctionsLabl">Functions Lab</a></p>
+              <p>Interview Questions: </p>
+              <p>Portfolio Builder: </p>
+            </div>
+
+
+            <h4>Week 2</h4>
+            <h4>Week 3</h4>
+            <hr>
+            <h4>Week 4</h4>
+            <hr>
+            <h4>Week 5</h4>
+            <hr>
+            <h4>Week 6</h4>
+            <hr>
+            <h4>Week 7</h4>
+            <hr>
+            <h4>Week 8</h4>
+            <hr> -->
+
 
     </section>
 
@@ -193,8 +245,9 @@
   <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../../assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Additional JS Files -->
   <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/prism.js"></script>
 
 </body>
 

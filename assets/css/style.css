@@ -1604,3 +1604,7 @@ ol.lab > li::marker {
   border-color: var(--bs-purple);
 }
 
+table.guide button{
+  min-width: 50%;
+}
+
