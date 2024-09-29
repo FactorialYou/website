@@ -27,12 +27,18 @@ FBDX: Pokemon
 
 
 
+General/Behavioral
+Language/Framework
+Theory
+- OOP
+- Data Structures
+- Algorithms
+Open Ended
 
-1. Stock Price
-2. Portfolio Site
-3. Database Project
-4. ATM API
-5. Currency Convertor
-6. Poke App
 
-
+How would you remove duplicate elements from an array?
+How would you reverse a string?
+How would you go about optimizing a piece of code?
+How would you decide when to break code into functions or classes?
+Explain your thought process when debugging a piece of code.
+What are some steps you can take to make sure your code is reuseable?
