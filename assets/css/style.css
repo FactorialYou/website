@@ -20,7 +20,7 @@ body:not(.landing) {
 }
 
 a {
-  color: var(--bs-purple);
+  color: unset;
   text-decoration: none;
 }
 
@@ -1490,94 +1490,6 @@ ol.lab > li::marker {
 }
 
 /*--------------------------------------------------------------
-# Terminal
---------------------------------------------------------------*/
-
-.terminal-container {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-}
-
-.terminal-container.multi {
-  justify-content: space-around;
-}
-
-@media (max-width: 1200px) {
-  .terminal-container.multi {
-    flex-direction: column;
-    /* background-color: pink; */
-  }
-
-  .terminal {
-    margin: 5px auto;
-    width: 100%;
-  }
-}
-
-.terminal {
-  box-sizing: border-box;
-  max-width: 550px;
-  flex: 1 0 30px;
-}
-
-.terminal > .header {
-  max-width: 550px;
-  box-sizing: border-box;
-  height: 25px;
-  background-color: #bbb;
-  margin: 0 auto;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.terminal > .header > .button {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  position: relative;
-  top: 0px;
-  display: inline-block;
-}
-
-.terminal > .header > .button.close{
-  left: 6px;
-  background-color: #ff3b47;
-  border-color: #9d252b;
-}
-
-.terminal > .header > .button.minimize {
-  left: 11px;
-  background-color: #ffc100;
-  border-color: #9d802c;
-}
-
-.terminal > .header > .button.zoom {
-  left: 16px;
-  background-color: #00d742;
-  border-color: #049931;
-}
-
-.terminal > .header {
-  max-width: 550px;
-  box-sizing: border-box;
-  height: 25px;
-  background-color: #bbb;
-  margin: 0 auto;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-.terminal > .screen {
-  margin: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  padding-top: 0%;
-  padding-bottom: 0%;
-}
-
-/*--------------------------------------------------------------
 # Custom Components
 --------------------------------------------------------------*/
 
@@ -1604,7 +1516,16 @@ ol.lab > li::marker {
   border-color: var(--bs-purple);
 }
 
-table.guide button{
+.badge-theme {
+  background-color: var(--bs-purple);
+  line-height: revert;
+}
+
+.article-card {
+  
+}
+
+/* table.guide button{
   min-width: 50%;
 }
 
@@ -1622,22 +1543,4 @@ table.guide button{
 .nav-pills-theme > .nav-item > .nav-pill-sm:hover {
   background-color: var(--bs-purple);
   color: white;
-}
-
-/* .nav-pills-theme > .nav-item > .nav-pill-sm.active:hover {
-  color: white;
-}
-
-.nav-pills-theme > .nav-item > .nav-pill-sm {
-  
-}
-
-.nav-pills-theme > .nav-item > .nav-pill-sm:hover {
-  color: var(--bs-purple);
-  border-color: var(--bs-purple);
 } */
-
-.card.problem-of-the-week {
-  max-width: 750px;
-}
-
