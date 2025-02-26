@@ -771,82 +771,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
-  overflow: hidden;
-}
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
-}
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: #2c4964;
-}
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 0 45px;
-}
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #b1a9fc;
-  font-size: 26px;
-}
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #fff;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
-}
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid var(--bs-purple);
-}
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--bs-purple);
-}
-@media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
-  }
-}
-
-/*--------------------------------------------------------------
 # Resources
 --------------------------------------------------------------*/
 .resource .resource-item {
@@ -1026,179 +950,6 @@ ol.lab > li::marker {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2c4964;
-  background: #f8f8f8;
-}
-.pricing h4 {
-  font-size: 36px;
-  color: var(--bs-purple);
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 20px;
-}
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-.pricing ul li {
-  padding-bottom: 16px;
-}
-.pricing ul i {
-  color: var(--bs-purple);
-  font-size: 18px;
-  padding-right: 4px;
-}
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-.pricing .btn-buy {
-  background: linear-gradient(42deg, var(--bs-purple) 0%, #7b27d8 100%);
-  display: inline-block;
-  padding: 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-.pricing .btn-buy:hover {
-  background: linear-gradient(180deg, var(--bs-purple) 0%, #7b27d8 100%);
-}
-.pricing .featured h3 {
-  color: #fff;
-  background: var(--bs-purple);
-}
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: var(--bs-purple);
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq {
-  background: linear-gradient(42deg, var(--bs-purple) 0%, #7b27d8 100%);
-}
-.faq .section-title h2, .faq .section-title p {
-  color: #fff;
-}
-.faq .section-title h2::after {
-  background: rgba(255, 255, 255, 0.6);
-}
-.faq .faq-list {
-  padding: 0 100px;
-}
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-.faq .faq-list li + li {
-  margin-top: 15px;
-}
-.faq .faq-list li {
-  padding: 30px;
-  background: #fff;
-  border-radius: 5px;
-  position: relative;
-}
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #8577fb;
-}
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-.faq .faq-list .icon-show {
-  display: none;
-}
-.faq .faq-list a.collapsed {
-  color: #2c4964;
-}
-.faq .faq-list a.collapsed:hover {
-  color: var(--bs-purple);
-}
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1490,6 +1241,31 @@ ol.lab > li::marker {
 }
 
 /*--------------------------------------------------------------
+# Workshop
+--------------------------------------------------------------*/
+
+/* Default: 3x3 grid */
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Collapse to 2x4 when screen is smaller */
+@media (max-width: 900px) {
+  .workshop-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Collapse to 1x9 when screen is even smaller */
+@media (max-width: 600px) {
+  .workshop-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/*--------------------------------------------------------------
 # Custom Components
 --------------------------------------------------------------*/
 
@@ -1519,6 +1295,15 @@ ol.lab > li::marker {
 .badge-theme {
   background-color: var(--bs-purple);
   line-height: revert;
+}
+
+.outline-badge-theme {
+  border: 3px solid var(--bs-purple);
+  color: var(--bs-purple);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .article-card {
