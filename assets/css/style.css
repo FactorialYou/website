@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.theme {
+  color: var(--bs-purple)
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1252,7 +1256,7 @@ ol.lab > li::marker {
 }
 
 /* Collapse to 2x4 when screen is smaller */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .workshop-grid {
       grid-template-columns: repeat(2, 1fr);
   }
