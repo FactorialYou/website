@@ -8,13 +8,24 @@ import ContactUsPage from "./page/ContactUsPage";
 import CoachingPage from "./page/CoachingPage";
 import WorkshopPage from "./page/WorkshopPage";
 import NotFoundPage from "./page/NotFound";
+import CompoundInterestCalculatorPage from "./page/tools/CompoundInterestCalculatorPage";
+import ToolsPage from "./page/ToolsPage";
+import ArticlesPage from "./page/ArticlesPage";
+import EmergecnyFundSizePage from "./page/articles/EmergecnyFundSizePage";
 
 
 export const PAGES = [
   { label: "Home", component: <HomePage />, path: "/", index: 0, isTab: true},
   { label: "Workshop", component: <WorkshopPage />, path: "/Workshop", index: 1, isTab: true},
-  { label: "Coaching", component: <CoachingPage />, path: "/Coaching", index: 2, isTab: true},
-  { label: "Contact Us", component: <ContactUsPage />, path: "/ContactUs", index: 3, isTab: true},
+
+  { label: "Articles", component: <ArticlesPage />, path: "/Articles", index: 2, isTab: true},
+  { label: "Emergecny Fund Size", component: <EmergecnyFundSizePage />, path: "/Articles/EmergecnyFundSize", index: -1, isTab: false},
+ 
+  { label: "Tools", component: <ToolsPage />, path: "/Tools", index: 3, isTab: true},
+  { label: "Compound Interest Calculator", component: <CompoundInterestCalculatorPage />, path: "/Tools/CompoundInterestCalculator", index: -1, isTab: false},
+
+  { label: "Coaching", component: <CoachingPage />, path: "/Coaching", index: 4, isTab: true},
+  { label: "Contact Us", component: <ContactUsPage />, path: "/ContactUs", index: 5, isTab: true},
   { label: "Not Found", component: <NotFoundPage />, path: "*", index: -1, isTab: false},
 ];
 
