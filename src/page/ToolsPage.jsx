@@ -1,20 +1,15 @@
-import { Button, Card } from "react-bootstrap";
+import { PAGES } from "../configs/pages";
 
 export default function ToolsPage() {
 
-    const tools = {
-        // Budgeting: [
-        //     { name: "Monthly Budget Planner", link: "/tools/monthly-budget" },
-        //     { name: "Spending Tracker", link: "/tools/spending-tracker" },
-        // ],
-        Investment: [
-            { name: "Compound Interest Calculator", link: "/Tools/CompoundInterestCalculator" },
-        ],
-        // Insurance: [
-        //     { name: "Life Insurance Needs Estimator", link: "/tools/life-insurance" },
-        //     { name: "Health Plan Comparison", link: "/tools/health-insurance" },
-        // ],
-    };
+    const tools = PAGES.filter(page => page.parent === "TOOLS").reduce((acc, page) => {
+        const key = page.category;
+        if (!acc[key]) {
+          acc[key] = [];
+        }
+        acc[key].push(page);
+        return acc;
+      }, {});
 
     return (
         <div class="page">
@@ -39,8 +34,8 @@ export default function ToolsPage() {
                             <hr className="border border-dark border-1 opacity-100"/>
                             <div className="workshop-grid">
                                 {items.map((tool) => (
-                                    <a className="fs-5 outline-badge-theme hoverable" href={tool.link}>
-                                        {tool.name}
+                                    <a className="fs-5 outline-badge-theme hoverable" href={tool.path}>
+                                        {tool.title}
                                     </a>
                                     // <div  style={{width: "fiteContent"}}>
                                     //     <a href={tool.link}>{tool.name}</a>

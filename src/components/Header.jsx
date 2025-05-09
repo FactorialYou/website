@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { PAGES } from '../App';
+import { PAGES } from '../configs/pages';
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto" activeKey={location.pathname}>
-                            {PAGES.filter(page => page.isTab).map(page => <Nav.Link href={page.path}>{page.label}</Nav.Link>)}
+                            {PAGES.filter(page => page.parent === "ROOT").map(page => <Nav.Link href={page.path}>{page.title}</Nav.Link>)}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

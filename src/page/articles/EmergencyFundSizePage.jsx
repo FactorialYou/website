@@ -1,4 +1,4 @@
-export default function EmergecnyFundSizePage() {
+export default function EmergencyFundSizePage() {
     return (
         <div className="page">
 
