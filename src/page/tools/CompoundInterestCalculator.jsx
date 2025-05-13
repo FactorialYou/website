@@ -72,9 +72,8 @@ export default function CompoundInterestCalculatorPage() {
     }, [chartData])
 
     return (
-        <>
 
-            <div className="row">
+            <div className="row mx-2">
 
                 <div className="col-12 col-lg-12 col-xl-4 mx-auto px-xl-3 px-0 mb-3">
                     <Card >
@@ -223,6 +222,5 @@ export default function CompoundInterestCalculatorPage() {
             </div>
 
 
-        </>
     )
 }
