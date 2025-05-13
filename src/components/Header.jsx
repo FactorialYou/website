@@ -16,7 +16,8 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto" activeKey={location.pathname}>
-                            {PAGES.filter(page => page.parent === "ROOT").map(page => <Nav.Link href={page.path}>{page.title}</Nav.Link>)}
+                            {PAGES.filter(page => page.path === "/").map(page => <Nav.Link href={page.path}>{page.title}</Nav.Link>)}
+                            {PAGES.filter(page => page.parent === "Home").map(page => <Nav.Link href={page.path}>{page.title}</Nav.Link>)}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

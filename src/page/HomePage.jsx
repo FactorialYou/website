@@ -6,9 +6,8 @@ import logo from "../images/logo.png"
 
 const HomePage = () => {
     return (
-        <div className="page mt-0">
-
-            <section id="hero" class="d-flex align-items-center">
+        <>
+            <section id="hero" class="d-flex align-items-center w-100">
 
                 <div class="container-fluid" data-aos="fade-up">
                     <div class="row justify-content-center">
@@ -100,7 +99,7 @@ const HomePage = () => {
                 </div>
             </section>
 
-        </div>
+        </>
     )
 };
 
