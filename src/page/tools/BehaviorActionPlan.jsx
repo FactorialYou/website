@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Button, Form, Pagination } from "react-bootstrap";
+import DownloadPdfButton from "../../components/DownloadFileButton";
 
 export default function BehaviorActionPlan() {
 
     const [active, setActive] = useState(1);
-    let selectedStep = "!"
     let items = [];
 
     for (let number = 1; number <= 5; number++) {
@@ -12,6 +12,8 @@ export default function BehaviorActionPlan() {
 
         );
     }
+
+
 
 
     return (
@@ -32,6 +34,10 @@ export default function BehaviorActionPlan() {
             </ol>
 
             <p>By consistently engaging with this process, you'll develop greater self-control and make meaningful strides toward the life you envision.</p>
+
+            <div className="d-flex justify-content-end">
+                <DownloadPdfButton label='Download as PDF' url="/BehavioralActionPlan.pdf" type="pdf" />
+            </div>
 
             <hr className="my-4" />
 
@@ -229,8 +235,8 @@ export default function BehaviorActionPlan() {
             </div>
 
             <div className="d-flex flex-row justify-content-between my-5">
-                <Button href={"#Step" + active} onClick={() => setActive(active - 1)}  hidden={active === 1} className="btn-outline-theme">{"<  Back"}</Button>
-                <div hidden={active !== 1}/>
+                <Button href={"#Step" + active} onClick={() => setActive(active - 1)} hidden={active === 1} className="btn-outline-theme">{"<  Back"}</Button>
+                <div hidden={active !== 1} />
                 <Button href={"#Step" + active} onClick={() => setActive(active + 1)} hidden={active === 7} className="btn-outline-theme">{"Next  >"}</Button>
             </div>
 
