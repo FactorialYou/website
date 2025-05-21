@@ -9,6 +9,8 @@ import ToolsPage from "../page/ToolsPage";
 import ArticlesPage from "../page/ArticlesPage";
 import EmergencyFundSizePage from "../page/articles/EmergencyFundSizePage";
 import BudgetTemplatesPage from "../page/tools/BudgetTemplatesPage";
+import DebtPayoffCalculator from "../page/tools/DebtPayoffCalculator";
+import BehaviorActionPlan from "../page/tools/BehaviorActionPlan";
 
 export const PAGES = [
     { title: "Home", component: <HomePage />, path: "/", parent: "ROOT" },
@@ -18,7 +20,9 @@ export const PAGES = [
     { title: "Sizing your Emergency Fund", component: <EmergencyFundSizePage />, path: "/Articles/EmergecnyFundSize", parent: "Articles", category: "Emergency Fund" },
 
     { title: "Tools", component: <ToolsPage />, path: "/Tools", parent: "Home" },
+    { title: "Behavioral Action Plan", component: <BehaviorActionPlan />, path: "/Tools/BehavioralActionPlan", parent: "Tools", category: "Behavior" },
     { title: "Budget Templates", component: <BudgetTemplatesPage />, path: "/Tools/BudgetTemplates", parent: "Tools", category: "Budgeting" },
+    { title: "Debt Payoff Calculator", component: <DebtPayoffCalculator />, path: "/Tools/DebtPayoffCalculator", parent: "Tools", category: "Debt" },
     { title: "Compound Interest Calculator", component: <CompoundInterestCalculator />, path: "/Tools/CompoundInterestCalculator", parent: "Tools", category: "Investing" },
 
     { title: "Coaching", component: <CoachingPage />, path: "/Coaching", parent: "Home" },

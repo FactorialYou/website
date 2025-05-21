@@ -142,7 +142,6 @@ export default function CompoundInterestCalculatorPage() {
                                 <div class="d-flex flex-row-reverse mb-3 ms-auto" style={{ "gap": "10px" }}>
                                     <Button onClick={submit} className="btn btn-theme">Calculate</Button>
                                     <Button onClick={clear} className="btn btn-outline-theme">Clear</Button>
-
                                 </div>
                             </Form>
                         </Card.Body>
@@ -154,7 +153,7 @@ export default function CompoundInterestCalculatorPage() {
                     <>
                         <Card className="col-12 col-lg-12 col-xl-6 mb-3" style={{ "minHeight": "500px" }}>
                             <ResponsiveContainer>
-                                <AreaChart data={chartData} margin={{ top: 50, right: 50, left: 75, bottom: 75 }}>
+                                <AreaChart data={chartData} margin={{ top: 25, right: 25, left: 50, bottom: 55 }}>
                                     <CartesianGrid strokeDasharray="3 3" />
 
                                     <XAxis
@@ -171,7 +170,7 @@ export default function CompoundInterestCalculatorPage() {
                                         label={{
                                             value: "US Dollars ($)",
                                             angle: -90,
-                                            dx: -75,
+                                            dx: -65,
                                             style: { textAnchor: 'middle' }
                                         }}
                                     />
@@ -187,7 +186,6 @@ export default function CompoundInterestCalculatorPage() {
                                         }}
                                     />
 
-                                    {/* <Line type="monotone" dataKey="contributions" stroke="var(--bs-gray)" strokeWidth={2} dot={{ r: 2 }} name="Total Contributions" /> */}
                                     <Area type="monotone" dataKey="value" stroke="var(--bs-purple)" fill="var(--bs-purple)" name="Total Value" legendType="circle" />
                                     <Area type="monotone" dataKey="contributions" stroke="#1ABC9C" fill="#1ABC9C" name="Total Contributions" legendType="circle" />
 

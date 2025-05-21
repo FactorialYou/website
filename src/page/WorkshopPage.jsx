@@ -192,23 +192,6 @@ const WorkshopPage = () => {
                     width="100%" height="800">Loading…</iframe>
             </div>
 
-            {/* <div class="card mb-2">
-                        <div class="card-body d-flex justify-content-between">
-                            Saving for College
-                            <span class="badge badge-theme rounded-pill">Coming Soon!</span>
-                        </div>
-                    </div>
-
-                    <div class="card article-card mb-2">
-                        <a href="/Articles/PayingForCollege">
-                            <div class="card-body d-flex justify-content-between">
-                                Paying for College
-                                <i class="bx bx-link-external text-center my-auto"></i>
-                            </div>
-                        </a>
-                    </div> */}
-
-
         </>
 
     )
