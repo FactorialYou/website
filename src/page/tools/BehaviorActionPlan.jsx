@@ -5,20 +5,10 @@ import DownloadPdfButton from "../../components/DownloadFileButton";
 export default function BehaviorActionPlan() {
 
     const [active, setActive] = useState(1);
-    let items = [];
-
-    for (let number = 1; number <= 5; number++) {
-        items.push(
-
-        );
-    }
-
-
-
 
     return (
 
-        <div className="smooth-scroll">
+        <div>
 
             <p>Welcome to your Behavioral Action Plan, a structured approach to help you align your daily actions with your long-term aspirations. This tool is designed to guide you through a process that fosters self-awareness, intentional behavior change, and sustainable progress toward your goals.</p>
 
