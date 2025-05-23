@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Routes>
         {PAGES.map(page => <Route path={page.path} element={<PageLayout config={page} />} />)}
+        {PAGES.filter(page => page.altPaths !== undefined).map(page => page.altPaths.map(path => <Route path={path} element={<PageLayout config={page} />} />))}
       </Routes>
     </Router>
   );
