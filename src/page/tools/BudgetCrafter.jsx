@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Form, Pagination } from "react-bootstrap";
+import { Button, Pagination } from "react-bootstrap";
 import DownloadPdfButton from "../../components/DownloadFileButton";
 
 import budgetCrafterIncome from "../../images/budgetCrafterIncome.png"
@@ -8,10 +8,12 @@ import budgetCrafterCashFlowBefore from "../../images/budgetCrafterCashFlowBefor
 import budgetCrafterCashFlowAfter from "../../images/budgetCrafterCashFlowAfter.png"
 import budgetCrafterPlanningPart1 from "../../images/budgetCrafterPlanningPart1.png"
 import budgetCrafterPlanningPart2 from "../../images/budgetCrafterPlanningPart2.png"
+import budget from "../../images/budget.png"
+import InlinePageLink from "../../components/InlinePageLink";
 
 export default function BudgetCrafter() {
 
-    const NUM_OF_STEPS = 5
+    const NUM_OF_STEPS = 6
     const [active, setActive] = useState(1);
 
     return (
@@ -22,6 +24,7 @@ export default function BudgetCrafter() {
 
             <h4 className="fs-5 mb-3 mt-3">How to Use This Tool:</h4>
             <ol>
+                <li><strong>Set up Your Budget:</strong> Choose a budgeting tool and create a empty budget.</li>
                 <li><strong>Record Your Income:</strong> Log all sources of income for the time period.</li>
                 <li><strong>Record Your Expenses:</strong> List all your expenses during the same time period.</li>
                 <li><strong>Calculate Cash Flow:</strong> Subtract total expenses from total income.</li>
@@ -52,8 +55,19 @@ export default function BudgetCrafter() {
 
             <div className="mx-1">
 
-                <div hidden={active !== 1}>
-                    <h3 id="Step1" className="fs-4 mb-4">Step 1: Record Your Income</h3>
+            <div hidden={active !== 1}>
+                    <h3 id="Step1" className="fs-4 mb-4">Step 1: Set up Your Budget</h3>
+                    <p>Create a new spreadsheet and establish sections for income, expenses, and any other categories you want to track. Not a spreadsheet whiz? We’ve got you covered! Check out one of our free <InlinePageLink title="Budget Templates" /></p>
+
+                    <p className="fw-bold mt-4">Example</p>
+                    <blockquote>
+                    <img src={budget} class="img-fluid img-thumbnail rounded m-1 align-bottom" />
+
+                    </blockquote>
+                </div>
+
+                <div hidden={active !== 2}>
+                    <h3 id="Step2" className="fs-4 mb-4">Step 2: Record Your Income</h3>
                     <p>Take a look through your bank statements and add each income source as a line in your budget. Add up all the income you get from each source and put the sum into your budget.</p>
 
                     <p className="fw-bold mt-4">Example</p>
@@ -62,9 +76,9 @@ export default function BudgetCrafter() {
                     </blockquote>
                 </div>
 
-                <div id="Step2" hidden={active !== 2}>
+                <div id="Step3" hidden={active !== 3}>
 
-                    <h3 id="Step1" className="fs-4 mb-4">Step 2: Record Your Expenses</h3>
+                    <h3 id="Step1" className="fs-4 mb-4">Step 3: Record Your Expenses</h3>
                     <p>Take a look through your bank statements and add each expense source as a line in your budget. Add up all the expenses from each source and put the sum into your budget.</p>
 
                     <p className="fw-bold mt-4">Example</p>
@@ -74,9 +88,9 @@ export default function BudgetCrafter() {
 
                 </div>
 
-                <div id="Step3" hidden={active !== 3}>
+                <div id="Step4" hidden={active !== 4}>
 
-                    <h3 className="fs-4 mb-4">Step 3: Balance the Budget</h3>
+                    <h3 className="fs-4 mb-4">Step 4: Balance the Budget</h3>
 
                     <p>Take a look at your cash flow i.e. income minus expenses. If your cash flow is positive, i.e. you made more money than you spent, take the excess income and put it to use. If your cash flow is negative, i.e. you made less money than you spent, you need to pull money from another source, likely savings, to make up the difference.</p>
 
@@ -91,9 +105,9 @@ export default function BudgetCrafter() {
 
                 </div>
 
-                <div id="Step4" hidden={active !== 4}>
+                <div id="Step5" hidden={active !== 5}>
 
-                    <h3 className="fs-4 mb-4">Step 4: Project and Prioritize</h3>
+                    <h3 className="fs-4 mb-4">Step 5: Project and Prioritize</h3>
 
                     <p>Take a look at your spending for the current month. We can assume that the majority of months will look the same outside of one time income/expenses. Are we using our money effectively? Ask yourself questions like:</p>
                     <div class="reflection-questions">
@@ -116,9 +130,9 @@ export default function BudgetCrafter() {
 
                 </div>
 
-                <div id="Step5" hidden={active !== 5}>
+                <div id="Step6" hidden={active !== 6}>
 
-                    <h3 className="fs-4 mb-4">Step 5: Rinse and Repeat</h3>
+                    <h3 className="fs-4 mb-4">Step 6: Rinse and Repeat</h3>
 
                     <p>Repeat all the steps at the end of each time period. Given enough time, your cash will begin to work for you instead of holding you back!</p>
 
