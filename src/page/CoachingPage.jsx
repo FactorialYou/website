@@ -1,5 +1,5 @@
 
-import coaching from "../images/coaching.jpeg"
+import coaching from "../images/coaching.jpg"
 
 const CoachingPage = () => {
     return (
