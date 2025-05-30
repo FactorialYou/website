@@ -1,5 +1,5 @@
 
-import workshop from "../images/workshop.png"
+import workshop from "../images/workshop.jpg"
 
 const WorkshopPage = () => {
     return (
