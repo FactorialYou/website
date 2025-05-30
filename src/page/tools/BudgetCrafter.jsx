@@ -55,13 +55,13 @@ export default function BudgetCrafter() {
 
             <div className="mx-1">
 
-            <div hidden={active !== 1}>
+                <div hidden={active !== 1}>
                     <h3 id="Step1" className="fs-4 mb-4">Step 1: Set up Your Budget</h3>
                     <p>Create a new spreadsheet and establish sections for income, expenses, and any other categories you want to track. Not a spreadsheet whiz? We’ve got you covered! Check out one of our free <InlinePageLink title="Budget Templates" /></p>
 
                     <p className="fw-bold mt-4">Example</p>
                     <blockquote>
-                    <img src={budget} class="img-fluid img-thumbnail rounded m-1 align-bottom" />
+                        <img src={budget} class="img-fluid img-thumbnail rounded m-1 align-bottom" />
 
                     </blockquote>
                 </div>
@@ -72,7 +72,7 @@ export default function BudgetCrafter() {
 
                     <p className="fw-bold mt-4">Example</p>
                     <blockquote>
-                        <img src={budgetCrafterIncome} className="img-fluid img-thumbnail rounded m-1 align-bottom"/>
+                        <img src={budgetCrafterIncome} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
                     </blockquote>
                 </div>
 
@@ -83,7 +83,7 @@ export default function BudgetCrafter() {
 
                     <p className="fw-bold mt-4">Example</p>
                     <blockquote>
-                        <img src={budgetCrafterExpenses} className="img-fluid img-thumbnail rounded m-1 align-bottom"/>
+                        <img src={budgetCrafterExpenses} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
                     </blockquote>
 
                 </div>
@@ -110,23 +110,20 @@ export default function BudgetCrafter() {
                     <h3 className="fs-4 mb-4">Step 5: Project and Prioritize</h3>
 
                     <p>Take a look at your spending for the current month. We can assume that the majority of months will look the same outside of one time income/expenses. Are we using our money effectively? Ask yourself questions like:</p>
-                    <div class="reflection-questions">
-                        <ul>
-                            <li>Is my income too low? How can I increase it?</li>
-                            <li>What spending does not align with my goals?</li>
-                            <li>What goals should I put my extra cash towards?</li>
-                        </ul>
+                    <ul>
+                        <li>Is my income too low? How can I increase it?</li>
+                        <li>What spending does not align with my goals?</li>
+                        <li>What goals should I put my extra cash towards?</li>
+                    </ul>
 
-                        <p className="fw-bold mt-4">Example</p>
-                        <blockquote>
-                            <img src={budgetCrafterPlanningPart1} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
-                            <img src={budgetCrafterPlanningPart2} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
-                            <p className="my-3 mx-1">
-                                Income is increased $70 by taking on another dog sitting job and expenses are decreased $176.19 by lowering the grocery budget and cutting out misc. expenses. All the extra money is put into savings. If I do this for four months, I will have my $1000 emergency fund!
-                            </p>
-                        </blockquote>
-
-                    </div>
+                    <p className="fw-bold mt-4">Example</p>
+                    <blockquote>
+                        <img src={budgetCrafterPlanningPart1} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
+                        <img src={budgetCrafterPlanningPart2} className="img-fluid img-thumbnail rounded m-1 align-bottom" />
+                        <p className="my-3 mx-1">
+                            Income is increased $70 by taking on another dog sitting job and expenses are decreased $176.19 by lowering the grocery budget and cutting out misc. expenses. All the extra money is put into savings. If I do this for four months, I will have my $1000 emergency fund!
+                        </p>
+                    </blockquote>
 
                 </div>
 
