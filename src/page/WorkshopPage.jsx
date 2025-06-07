@@ -14,6 +14,25 @@ const WorkshopPage = () => {
                     <p class="fst-italic">
                         Get a crash course in personal finance through discusssions and activites. Learn what they didn't teach you in school and take control of your personal finances!
                     </p>
+
+
+
+                    Start Date: June 24th
+                    Duration: 6 Weeks
+
+                    Time and Day: Tuesday, 6 – 8pm
+                    Location: Zoom
+                    Seats: 20 available
+
+                    <div class="d-flex fs-5">
+                        <box-icon type="solid" name='calendar'></box-icon>
+                        <span class="ms-2"><strong>Start Date:</strong>June 24th</span>
+                    </div>
+                    <div class="d-flex fs-5">
+                        <box-icon name='hourglass' type='solid' ></box-icon>
+                        <span class="ms-2"><strong>Duration:</strong>6 Weeks</span>
+                    </div>
+
                     <div class="d-flex fs-5">
                         <box-icon type="solid" name='calendar'></box-icon>
                         <span class="ms-2"><strong>Day & Time:</strong> Thursdays 6:00 pm - 8:00 pm</span>
@@ -22,10 +41,7 @@ const WorkshopPage = () => {
                         <box-icon name='location-plus' type='solid' ></box-icon>
                         <span class="ms-2"><strong>Location:</strong> Online - Link will be provided after sign-up</span>
                     </div>
-                    <div class="d-flex fs-5">
-                        <box-icon name='hourglass' type='solid' ></box-icon>
-                        <span class="ms-2"><strong>Duration:</strong> 1-2 hours</span>
-                    </div>
+
                     <div class="fs-5">
                         <box-icon name='male' type='solid' ></box-icon>
                         <span class="ms-2"><strong>Seats:</strong> 20 avaliable</span>
@@ -87,52 +103,6 @@ const WorkshopPage = () => {
                 </span>
 
             </div>
-
-            <h3 id="learn-more">When will we meet</h3>
-            <hr />
-            <div class="col-xs-12 col-lg-8 mx-auto mb-5">
-                <div class="card p-2">
-                    <table class="table mb-0">
-                        <thead>
-                            <tr>
-                                <th scope="col">Date</th>
-                                <th scope="col">Class</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
-                            <tr>
-                                <td>4/10</td>
-                                <td>Class 1</td>
-                            </tr>
-                            <tr>
-                                <td>4/17</td>
-                                <td>Class 2</td>
-                            </tr>
-                            <tr>
-                                <td>4/24</td>
-                                <td>Class 3</td>
-                            </tr>
-                            <tr>
-                                <td>5/1</td>
-                                <td>Break - No Class</td>
-                            </tr>
-                            <tr>
-                                <td>5/8</td>
-                                <td>Class 4</td>
-                            </tr>
-                            <tr>
-                                <td>5/15</td>
-                                <td>Class 5</td>
-                            </tr>
-                            <tr style={{ "border-bottom-color": "transparent" }}>
-                                <td>5/22</td>
-                                <td>Class 6</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
 
             <h3>Frequently Asked Questions</h3>
             <hr />
