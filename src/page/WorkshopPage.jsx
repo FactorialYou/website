@@ -14,36 +14,25 @@ const WorkshopPage = () => {
                     <p class="fst-italic">
                         Get a crash course in personal finance through discusssions and activites. Learn what they didn't teach you in school and take control of your personal finances!
                     </p>
-
-
-
-                    Start Date: June 24th
-                    Duration: 6 Weeks
-
-                    Time and Day: Tuesday, 6 – 8pm
-                    Location: Zoom
-                    Seats: 20 available
-
-                    <div class="d-flex fs-5">
+                    <div class="d-flex align-items-center fs-5">
                         <box-icon type="solid" name='calendar'></box-icon>
                         <span class="ms-2"><strong>Start Date:</strong>June 24th</span>
                     </div>
-                    <div class="d-flex fs-5">
+                    <div class="d-flex align-items-center fs-5">
                         <box-icon name='hourglass' type='solid' ></box-icon>
                         <span class="ms-2"><strong>Duration:</strong>6 Weeks</span>
                     </div>
-
-                    <div class="d-flex fs-5">
-                        <box-icon type="solid" name='calendar'></box-icon>
+                    <div class="d-flex align-items-center fs-5">
+                        <box-icon type="solid" name='time'></box-icon>
                         <span class="ms-2"><strong>Day & Time:</strong> Thursdays 6:00 pm - 8:00 pm</span>
                     </div>
-                    <div class="d-flex fs-5">
+                    <div class="d-flex align-items-center fs-5">
                         <box-icon name='location-plus' type='solid' ></box-icon>
                         <span class="ms-2"><strong>Location:</strong> Online - Link will be provided after sign-up</span>
                     </div>
 
-                    <div class="fs-5">
-                        <box-icon name='male' type='solid' ></box-icon>
+                    <div class="d-flex align-items-center fs-5">
+                        <box-icon name='group' type='solid' ></box-icon>
                         <span class="ms-2"><strong>Seats:</strong> 20 avaliable</span>
                     </div>
                     <div class="d-flex mt-3">
