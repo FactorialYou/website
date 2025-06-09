@@ -15,6 +15,7 @@ import BudgetCrafter from "../page/tools/BudgetCrafter";
 import EmergencyFundBuilder from "../page/tools/EmergencyFundBuilder";
 import LifeInsurancePlanner from "../page/tools/LifeInsurancePlanner";
 import DebtPayoffPlanner from "../page/tools/DebtPayoffPlanner";
+import HomePurchaseBudgetPlanner from "../page/tools/HomePurchaseBudgetPlanner";
 
 export const PAGES = [
     { title: "Home", component: <HomePage />, path: "/", parent: "ROOT" },
@@ -31,8 +32,8 @@ export const PAGES = [
     { title: "Debt Payoff Planner", component: <DebtPayoffPlanner />, path: "/Tools/DebtPayoffPlanner", parent: "Tools", category: "Debt" },
     { title: "Emergency Fund Builder", component: <EmergencyFundBuilder />, path: "/Tools/EmergencyFundBuilder", parent: "Tools", category: "Emergency Fund" },
     { title: "Life Insurance Planner", component: <LifeInsurancePlanner />, path: "/Tools/LifeInsurancePlanner", parent: "Tools", category: "Insurance" },
+    { title: "Home Purchase Budget Planner", component: <HomePurchaseBudgetPlanner />, path: "/Tools/HomePurchaseBudgetPlanner", parent: "Tools", category: "Home Ownership" },
     { title: "Compound Interest Calculator", component: <CompoundInterestCalculator />, path: "/Tools/CompoundInterestCalculator", parent: "Tools", category: "Investing" },
-
 
     { title: "Coaching", component: <CoachingPage />, path: "/Coaching", parent: "Home" },
     { title: "Contact Us", component: <ContactUsPage />, path: "/ContactUs", parent: "Home" },

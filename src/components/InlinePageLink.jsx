@@ -1,6 +1,6 @@
 import { PAGES } from "../configs/pages";
 
-const InlinePageLink = ({ title }) => {
+const InlinePageLink = ({ title, href }) => {
 
     const containerStyle = {
         border: '1px solid var(--bs-purple)',
@@ -23,9 +23,11 @@ const InlinePageLink = ({ title }) => {
         display: 'inline-block',
     };
 
+    const HREF = href || PAGES.find(page => page.title === title)?.path
+
     return (
         <span className="p-1" style={containerStyle}>
-            <a href={PAGES.find(page => page.title === title)?.path} style={linkStyle} target="_blank">
+            <a href={HREF} style={linkStyle} target="_blank">
                 <span>{title}</span>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
